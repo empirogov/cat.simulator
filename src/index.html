@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Simulator</title>
+    <style type="text/css">
+        body {
+            background-color: lightgray;
+        }
+        .wrapper {
+            width: 80%;
+            margin: 0 auto;
+        }
+        #chronicle {
+            max-height: 480px;
+            overflow: auto;
+        }
+        .chronicle-entry {
+            margin: 0;
+            margin-bottom: 1em;
+            line-height: 2em;
+            font-family: sans-serif;
+        }
+        .chronicle-time {
+            display: block;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <button id="start" onclick="CatSimulator.Cat.born()">Start</button>
+    <div id="chronicle"></div>
+</div>
+<script type="text/javascript" src="js/application.min.js"></script>
+</body>
+</html>

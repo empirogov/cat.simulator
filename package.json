@@ -1,0 +1,16 @@
+{
+  "name": "cat.simulator",
+  "description": "Zero-player game of boring everyday life of lazy cat.",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt": "^0.4.4"
+  }
+}
