@@ -5,20 +5,42 @@
     <style type="text/css">
         body {
             background-color: lightgray;
+            font-family: sans-serif;
         }
         .wrapper {
             width: 80%;
+            position: relative;
             margin: 0 auto;
         }
+        #sidebar {
+            width: 40%;
+            max-width: 200px;
+            position: absolute;
+            font-family: monospace;
+        }
+        .sidebar-key {
+            clear: both;
+            float: left;
+        }
+        .sidebar-value {
+            float: right;
+        }
+        .sidebar-value:after {
+            content: "";
+            display: block;
+            width: 100%;
+            clear: both;
+        }
         #chronicle {
+            width: 50%;
             max-height: 480px;
             overflow: auto;
+            margin-left: 50%;
         }
         .chronicle-entry {
             margin: 0;
             margin-bottom: 1em;
             line-height: 2em;
-            font-family: sans-serif;
         }
         .chronicle-time {
             display: block;
@@ -29,6 +51,7 @@
 <body>
 <div class="wrapper">
     <button id="start" onclick="CatSimulator.Cat.born()">Start</button>
+    <div id="sidebar"></div>
     <div id="chronicle"></div>
 </div>
 <script type="text/javascript" src="js/application.min.js"></script>

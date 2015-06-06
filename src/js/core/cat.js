@@ -35,6 +35,7 @@ CatSimulator.Cat = {
         this.parameters = this.survive(this.parameters);
         action.perform();
         CatSimulator.UI.log(action.message);
+        CatSimulator.UI.renderSidebar();
         if (this.isAlive()) {
             setTimeout(function () {
                 CatSimulator.Cat.takeAnAction()
